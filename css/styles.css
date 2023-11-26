@@ -454,6 +454,7 @@ footer {
 .icon-media{
   display: block; 
   fill: #f4f4fd;
+  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-unit{
