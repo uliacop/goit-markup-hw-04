@@ -65,10 +65,9 @@ body {
   padding: 24px 0;
   display: inline-block; 
   position: relative; 
-  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-/* .menu-item:first-child::after */
 .first::after
 {
   content: '';
@@ -150,8 +149,10 @@ footer {
     rgba(46, 47, 66, 0.70)
     ),
   url(../images/mainsection/bi.jpg);
-  width: 1440рх;
   background-size: cover;
+  max-width: 1440px; 
+  background-repeat: no-repeat; 
+  background-position: center; 
 }
 
 .button {
@@ -170,6 +171,7 @@ footer {
   border: none; 
   border-radius: 4px;
   cursor: pointer; 
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo link {
   font-family: "Raleway", sans-serif;
@@ -183,6 +185,7 @@ footer {
 .contacts-link {
   line-height: 1.5;
   letter-spacing: 0.32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .features-discribe {
@@ -194,7 +197,7 @@ footer {
   font-weight: 400;
   line-height: 24px;
   color: #434455;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em;  
 }
 
 .footer-text {
@@ -303,9 +306,13 @@ footer {
 
 .portfolio-card{
   width: calc((100% - 48px) / 3); 
- background: #FFF;
+ background: #FFF; 
+ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio-card:hover{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .team-card {
  background-color: #FFFFFF;
  width: calc((100% - 72px) / 4);
@@ -329,6 +336,7 @@ footer {
 }
 .container { 
   max-width: 1158px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -428,10 +436,16 @@ footer {
 .strategy-item{
   width: calc((100% - 72px) / 4);
 }
+
 .container-icon{
   border-radius: 4px;
  border: 1px solid  #8E8F99;
  background: #F4F4FD;
+ display: flex; 
+ align-items: center; 
+ justify-content: center; 
+ height: 112px;
+ margin-bottom: 8px; 
 }
 
 .logo-icon{
@@ -439,6 +453,7 @@ footer {
 }
 .icon-media{
   display: block; 
+  fill: #f4f4fd;
 }
 
 .social-unit{
@@ -448,30 +463,35 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4D5AE5;
+  background-color: #4D5AE5; 
 }
 
-.social-unit:hover,
-.social-unit:focus{
-  background-color: #31D0AA;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.social-item{
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.social-media{
-  display: flex;
- justify-content: center;
- align-items: center;
- gap: 24px;
+.social-unit:hover,
+.social-unit:focus {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #404bbf;
+}
+.social-list--footer{
+  gap: 16px; 
+}
+.social-unit--footer:hover,
+.social-unit--footer:focus{
+  background-color: #31D0AA;
 }
 
 .social-list{
   display: flex;
   justify-content: center;
-  column-gap: 24px;
+  gap: 24px
 }
 
 .container-footer{
   display:flex;
-  gap:120px
+  gap:120px;
+  align-items: baseline
 }
 
 .review{
@@ -488,7 +508,6 @@ footer {
   overflow: auto;
   transform: translateY(100%);
   background-color: rgba(77, 90, 229, 1);
-  transition: transform 250ms linear;
   color:  #F4F4FD;
   font-family: Roboto;
   font-size: 16px;
@@ -496,7 +515,8 @@ footer {
   font-weight: 400;
  line-height: 24px; 
  letter-spacing: 0.02em;
- padding: 40px 32px 164px;
+ padding: 40px 32px; 
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review:hover .overlay {
@@ -505,8 +525,15 @@ footer {
 
 .media{
   margin-bottom: 16px;
+  font-weight: 500;
+  color:  #FFFFFF  
 }
 
 .first {
   color: #404bbf;
 }
+.logo-div{
+  margin-right: 120px 
+}
+
+
