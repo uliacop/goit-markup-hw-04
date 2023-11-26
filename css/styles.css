@@ -475,10 +475,10 @@ footer {
   background-color: #404bbf;
 }
 .social-unit--footer{
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+  
 }
 .social-unit--footer:hover,
-.social-unit--focus:hover{
+.social-unit--focus:focus{
   background-color: #31D0AA;
 }
 /* .social-media{
@@ -491,7 +491,7 @@ footer {
 .social-list{
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px
 }
 
 .container-footer{
@@ -542,3 +542,6 @@ footer {
   margin-right: 120px 
 }
 
+.social-item{
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
