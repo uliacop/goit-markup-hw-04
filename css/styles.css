@@ -484,8 +484,7 @@ footer {
 
 .social-list{
   display: flex;
-  justify-content: center;
-  gap: 24px
+  justify-content: center;  
 }
 
 .container-footer{
@@ -537,3 +536,6 @@ footer {
 }
 
 
+.social-list--section{
+  gap:24px
+}
