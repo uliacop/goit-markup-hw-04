@@ -489,7 +489,8 @@ footer {
 
 .container-footer{
   display:flex;
-  gap:120px
+  gap:120px;
+  align-items: baseline
 }
 
 .review{
@@ -523,12 +524,14 @@ footer {
 
 .media{
   margin-bottom: 16px;
+  font-weight: 500;
+  color:  #FFFFFF  
 }
 
 .first {
   color: #404bbf;
 }
-.social-item{
-   
+.logo-div{
+  margin-right: 120px 
 }
 
