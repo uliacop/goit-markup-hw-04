@@ -153,6 +153,7 @@ footer {
   max-width: 1440px; 
   background-repeat: no-repeat; 
   background-position: center; 
+  margin: 0 auto;
 }
 
 .button {
@@ -336,7 +337,6 @@ footer {
 }
 .container { 
   max-width: 1158px;
-  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -487,7 +487,6 @@ footer {
 
 .container-footer{
   display:flex;
-  gap:120px;
   align-items: baseline
 }
 
